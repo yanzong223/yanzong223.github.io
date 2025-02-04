@@ -148,7 +148,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/04/2025-MCM-C%E8%B5%9B%E5%90%8E%E5%A4%8D%E7%9B%98/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/04/%E6%8E%A2%E9%99%A9%E7%AC%94%E8%AE%B0/2025-MCM-C%E8%B5%9B%E5%90%8E%E5%A4%8D%E7%9B%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -162,7 +162,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/02/04/2025-MCM-C%E8%B5%9B%E5%90%8E%E5%A4%8D%E7%9B%98/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2025/02/04/%E6%8E%A2%E9%99%A9%E7%AC%94%E8%AE%B0/2025-MCM-C%E8%B5%9B%E5%90%8E%E5%A4%8D%E7%9B%98/" class="post-title-link" itemprop="url">2025-MCM-C赛后复盘</a>
         </h2>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-02-04 11:51:48 / 修改时间：11:51:03" itemprop="dateCreated datePublished" datetime="2025-02-04T11:51:48+08:00">2025-02-04</time>
+              <time title="创建时间：2025-02-04 11:51:48 / 修改时间：12:24:05" itemprop="dateCreated datePublished" datetime="2025-02-04T11:51:48+08:00">2025-02-04</time>
             </span>
 
           
@@ -187,7 +187,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="赛题："><a href="#赛题：" class="headerlink" title="赛题："></a>赛题：<img src="https://gitee.com/yyyanshen/obsidian_graph/raw/master/img/202502031337927.png" alt="image.png"></h1><h2 id="选题心路历程"><a href="#选题心路历程" class="headerlink" title="选题心路历程"></a>选题心路历程</h2><p>先简述一下我们队的情况。我们队都是没有经过正经训练，大家速成了几天就来打美赛的大二计科选手。所以其实我们拥有扎实的和ai交流的能力和不太死板的数学建模思想（即我们不会拘泥于常用常考的模型，而是想到什么用什么）。<br>我是论文手，DB是建模手，L是代码手。但是事实上分工并不是那么明确）<br>我们约定第一天7：00开始看题，到8：30的时候就已经定下来选c题了。有几个原因：<br>	C题给了数据。<br>		我们不太会找数据，也不敢冒险找一些不一定可以做出结果的数据。所以范围缩小到C和D。<br>	C题有一个大致的思路，和我们搞计算机的小孩接触的东西也更加接近。<br>		D题要用网络流，但是我们三个人都不会。F一开始也在考虑范畴之内，但是我们因为找数据能力和语文建模能力不一定行还是退缩了。</p>
+          <h1 id="赛题："><a href="#赛题：" class="headerlink" title="赛题："></a>赛题：<img src="https://gitee.com/yyyanshen/obsidian_graph/raw/master/img/202502041205911.png" alt="file-20250204120555442.png"></h1><h2 id="选题心路历程"><a href="#选题心路历程" class="headerlink" title="选题心路历程"></a>选题心路历程</h2><p>先简述一下我们队的情况。我们队都是没有经过正经训练，大家速成了几天就来打美赛的大二计科选手。所以其实我们拥有扎实的和ai交流的能力和不太死板的数学建模思想（即我们不会拘泥于常用常考的模型，而是想到什么用什么）。<br>我是论文手，DB是建模手，L是代码手。但是事实上分工并不是那么明确）<br>我们约定第一天7：00开始看题，到8：30的时候就已经定下来选c题了。有几个原因：<br>	C题给了数据。<br>		我们不太会找数据，也不敢冒险找一些不一定可以做出结果的数据。所以范围缩小到C和D。<br>	C题有一个大致的思路，和我们搞计算机的小孩接触的东西也更加接近。<br>		D题要用网络流，但是我们三个人都不会。F一开始也在考虑范畴之内，但是我们因为找数据能力和语文建模能力不一定行还是退缩了。</p>
 <h2 id="题目初步分析"><a href="#题目初步分析" class="headerlink" title="题目初步分析"></a>题目初步分析</h2><p>其实<em>读题</em>是一件很重要的事情，但是感觉当时没有建立起这个共识。<em>而且是第一次接触这种题目，有一些表述翻译为中文之后也不理解题目需要我们给一个什么样的答案。此外，也不知道这些题目全用“一个”模型来解决还是应该用多个模型拼凑。</em> 这造成了我们检查论文的时候发现了特别多的漏洞），然后赶紧女娲补天。<br>大家初步讨论的结果是：<br>	第一问奖牌榜预测是一个回归问题，可以考虑蒙特卡洛&#x2F;随机森林等。<br>	第二问伟大教练效应分析只有大致的思路，一开始也想用回归去做。<br>	第三问就是通过前面两个模型得出一个结论分析一下。<br>接下来我先去谷歌学术找论文参考，他们先找找有没有合适的模型。</p>
 <h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><h2 id="题目需求分析"><a href="#题目需求分析" class="headerlink" title="题目需求分析"></a>题目需求分析</h2><h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>题目给的数据像是从奥运官网直接拿到的，内涵了很多历史变迁或者政治因素的痕迹，例如苏联解体，东西德合并，俄罗斯禁赛等。需要将对应的信息进行处理。<br>题目给了四个文件，但是我们如果要把数据扔进模型里面，应该只能放一个完整的文件进去。这一步需要将对应的信息进行整合。<br>还要对应不同的小题的个别需求做出回归预测之外需要的数据。</p>
 <h3 id="模型建立"><a href="#模型建立" class="headerlink" title="模型建立"></a>模型建立</h3><p>第一问的核心是做一个奖牌预测模型，并进行正确率的衡量。下面有三个小问，在赛后看来<br>	第一小问，2028奖牌榜预测和置信区间。这是需要我们给一个奖牌预测模型的结果。<br>	第二小问，问我们有多少国家实现了零个奖牌的突破，应该是要我们的模型着重考虑这个数据特征（即国家-奖牌数据有很多的0），再对模型进行设计的优化。还需要对这个分类问题给出一个置信度。<br>	第三小问，考虑项目对不同国家的重要性以及东道国选择的项目对他们奖牌国家的增益。这两个部分应该和预测模型的主体关系不大。我们计算出之后把这两个问题作为特征放进了预测模型的输入中。</p>
@@ -321,6 +321,10 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
